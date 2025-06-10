@@ -16,7 +16,15 @@ He understands instructions, adapts to tone, and returns clean, soulful drafts r
 st.markdown("---")
 
 # API key
-api_key = st.text_input("🔑 Enter your OpenAI API Key", type="password")
+api_key = st.text_input("🔑 import OpenAI from "openai";
+const client = new OpenAI();
+
+const response = await client.responses.create({
+    model: "gpt-4.1",
+    input: "Write a one-sentence bedtime story about a unicorn.",
+});
+
+console.log(response.output_text);", type="password")
 
 # Upload or paste content
 st.subheader("📄 Provide Your Content")
